@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyDuration_Example' do
+  pod 'SwiftyDuration', :path => '../'
+
+  target 'SwiftyDuration_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
