@@ -31,8 +31,8 @@
 		12B8162F12C960CB9D694F5A /* Pods_SwiftyDuration_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyDuration_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F6724A00586606638A9DFA /* Pods_SwiftyDuration_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyDuration_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		363F89651039C832C343DC35 /* Pods-SwiftyDuration_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDuration_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyDuration_Tests/Pods-SwiftyDuration_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		461474BDE4D8389DE6D9910B /* SwiftyDuration.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftyDuration.podspec; path = ../SwiftyDuration.podspec; sourceTree = "<group>"; };
-		579414832B1D3EA183910620 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		461474BDE4D8389DE6D9910B /* SwiftyDuration.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyDuration.podspec; path = ../SwiftyDuration.podspec; sourceTree = "<group>"; };
+		579414832B1D3EA183910620 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftyDuration_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyDuration_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		95B2F5A24880A9DAF66963AA /* Pods-SwiftyDuration_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDuration_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftyDuration_Example/Pods-SwiftyDuration_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BCE69581D5EE991FF369A6EB /* Pods-SwiftyDuration_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDuration_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyDuration_Example/Pods-SwiftyDuration_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C9EA371358D9FA832D2ED5BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C9EA371358D9FA832D2ED5BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F05964FBDC0F1D435BAE11BA /* Pods-SwiftyDuration_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDuration_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyDuration_Tests/Pods-SwiftyDuration_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				363F89651039C832C343DC35 /* Pods-SwiftyDuration_Tests.debug.xcconfig */,
 				F05964FBDC0F1D435BAE11BA /* Pods-SwiftyDuration_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftyDuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftyDuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

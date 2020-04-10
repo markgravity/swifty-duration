@@ -1,0 +1,6 @@
+framework module Pods_SwiftyDuration_Example {
+  umbrella header "Pods-SwiftyDuration_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
