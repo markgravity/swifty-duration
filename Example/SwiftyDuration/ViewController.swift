@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         
         fakeDuration(elapse: Duration(seconds: 1)) {
             print(Date())
-            Timer.scheduledTimer(withTimeInterval: duration.inSeconds, repeats: false) { _ in
-                print(Date())
-            }
+//            Timer.scheduledTimer(withTimeInterval: duration.inSeconds, repeats: false) { _ in
+//                print(Date())
+//            }
         }
     }
 

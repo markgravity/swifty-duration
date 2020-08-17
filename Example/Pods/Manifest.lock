@@ -1,15 +1,27 @@
 PODS:
-  - SwiftyDuration (0.1.0)
+  - ObjectMapper (4.2.0)
+  - SwiftyDuration (0.1.0):
+    - SwiftyDuration/Core (= 0.1.0)
+    - SwiftyDuration/ObjectMapper (= 0.1.0)
+  - SwiftyDuration/Core (0.1.0)
+  - SwiftyDuration/ObjectMapper (0.1.0):
+    - ObjectMapper
+    - SwiftyDuration/Core
 
 DEPENDENCIES:
   - SwiftyDuration (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
 
 EXTERNAL SOURCES:
   SwiftyDuration:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyDuration: b1b6a2f83deecd9a066e33c3b27148481dff79e8
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SwiftyDuration: 93239cf9c70d39c2cc5d78ee827fa0a92818132d
 
 PODFILE CHECKSUM: dc8686e084d6d1a75f10cc7bf79501730867c1a0
 

@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.name             = 'SwiftyDuration'
   s.version          = '0.1.0'
   s.summary          = 'Utilities to make working with \'Duration\'s easier.'
+  s.swift_version    = '5.0'
+  
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,11 +34,13 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SwiftyDuration/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SwiftyDuration' => ['SwiftyDuration/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Core' do |sp|
+    sp.source_files = 'SwiftyDuration/Classes/Core/**/*'
+  end
+  
+  s.subspec 'ObjectMapper' do |sp|
+    sp.source_files = 'SwiftyAnalytics/Classes/ObjectMapper/**/*'
+    sp.dependency 'SwiftyDuration/Core'
+    sp.dependency 'ObjectMapper'
+  end
 end
